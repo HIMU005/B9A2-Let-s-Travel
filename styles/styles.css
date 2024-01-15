@@ -72,6 +72,7 @@ nav {
     margin-bottom: 100px;
     /* background-size: 115%; */
 }
+
 .explore-title {
     color: #FFF;
     font-size: 4rem;
@@ -80,6 +81,7 @@ nav {
     margin-bottom: 24px;
     width: 100%;
 }
+
 .explore-description {
     color: #FFF;
     text-align: center;
@@ -100,7 +102,7 @@ nav {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     width: 60%;
-    margin: 0px auto;   
+    margin: 0px auto;
 }
 
 .search,
@@ -130,58 +132,154 @@ nav {
     justify-content: space-evenly;
     align-items: center;
 }
+
 /* explore-styles-end-here */
 
 
 /* popular-styles-start-here */
-.popular-tour{
+.popular-tour {
     width: 85%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     gap: 24px;
 }
-.tour-details{
+
+.tour-details {
     width: 95%;
 }
-.title{
+
+.title {
     color: #131318;
-text-align: center;
-font-size: 2.5rem;
-font-weight: 800;
-margin-bottom: 24px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
 }
-.title-description, .tour-details ul>li, .another-description{
+
+.title-description,
+.tour-details ul>li,
+.another-description {
     color: rgba(19, 19, 24, 0.70);
-font-size: 1rem;
-font-weight: 400;
-line-height: 26px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
 }
-.title-description{
+
+.title-description {
     width: 90%;
 }
-.tour-details ul>li{
+
+.tour-details ul>li {
     margin-bottom: 16px;
     width: 80%;
 }
-.tour-details ul{
+
+.tour-details ul {
     padding: 3%;
 }
-.another-description{
+
+.another-description {
     color: #5A5A5D;
     margin-bottom: 35px;
     width: 95%;
 
 }
-.tour-img{
+
+.tour-img {
     width: 95%;
 }
-.tour-img img{
+
+.tour-img img {
     width: 100%;
     height: 100%;
 }
 
 /* popular-styles-end-here */
+
+/* destination-section-styles-start-here */
+.destination {
+    width: 85%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.img-title {
+    height: inherit;
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-container {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+.img-container{
+    margin-top: 24px;
+}
+.img-container>div {
+    border-radius: 16px;
+}
+
+.maldives-img,
+.indonesia-img,
+.bangladesh-img,
+.bandarban-img {
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+.srilanka-img,
+.north-america-img,
+.kashmir-img {
+    height: 286px;
+    background-repeat: no-repeat;
+}
+
+.maldives-img {
+    background-image: url('../images/Rectangle\ 5.png');
+    width: 48%;
+}
+
+.indonesia-img {
+    background-image: url('../images/Rectangle\ 8.png');
+    width: 50%;
+}
+
+.srilanka-img {
+    background-image: url('../images/Rectangle\ 6.png');
+    width: 34%;
+}
+
+.north-america-img {
+    background-image: url('../images/Rectangle\ 7.png');
+    width: 43%;
+}
+
+.kashmir-img {
+    background-image: url('../images/Rectangle\ 9.png');
+    width: 25%;
+}
+
+.bangladesh-img {
+    background-image: url('../images/Rectangle\ 11.png');
+    width: 42%;
+}
+
+.bandarban-img {
+    background-image: url('../images/Rectangle\ 10.png');
+    width: 58%;
+}
+
+
+/* destination-section-styles-end-here */
 
 
 
@@ -199,31 +297,47 @@ line-height: 26px;
     .explore {
         background-size: cover;
     }
-    .explore-title{
+
+    .explore-title {
         width: 85%;
         margin: 30px auto 5px auto;
         font-size: 22px;
     }
-    .explore-description{
+
+    .explore-description {
         font-size: 14px;
         width: 85%;
     }
 
-    .button-section, .popular-tour {
+    .button-section,
+    .popular-tour {
         flex-direction: column;
         align-items: center;
         width: 70%;
     }
+
     .search,
-.primary-btn {
-    width: 255px;
-    height: 52px;
-}
-.title{
-    font-size: 20px;
-}
-.title-description, .another-description{
-    font-size: 14px;
-}
+    .primary-btn {
+        width: 255px;
+        height: 52px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .title-description,
+    .another-description {
+        font-size: 14px;
+    }
+    .img-container{
+        flex-direction: column;
+        align-self: center;
+    }
+    .maldives-img, .indonesia-img, .srilanka-img, .north-america-img, .kashmir-img, .bangladesh-img, .bandarban-img{
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
 
 }
