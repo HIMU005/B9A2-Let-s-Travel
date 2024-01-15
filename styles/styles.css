@@ -221,9 +221,11 @@ nav {
     gap: 24px;
     justify-content: space-between;
 }
-.img-container{
+
+.img-container {
     margin-top: 24px;
 }
+
 .img-container>div {
     border-radius: 16px;
 }
@@ -279,8 +281,74 @@ nav {
 }
 
 
+
 /* destination-section-styles-end-here */
 
+/* why-choose-us-section-start-here */
+.why-choose-us {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 85%;
+    text-align: center;
+}
+
+.why-choose-us .title-description {
+    margin: 24px auto 48px auto;
+}
+
+.reason-of-choose {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.choose-option {
+    padding: 32px;
+    border: 1px solid red;
+}
+
+.choose-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.choose-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 32px;
+}
+
+.reason-of-choose .another-description {
+    text-align: justify;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+#choose-one {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    width: 95%;
+}
+
+#choose-two {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    width: 95%;
+}
+
+#choose-three {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    width: 50%;
+    border: 1px solid red;
+    margin: 24px auto;
+}
+
+/* why-choose-us-section-end-here */
 
 
 
@@ -330,14 +398,31 @@ nav {
     .another-description {
         font-size: 14px;
     }
-    .img-container{
+
+    .img-container, .reason-of-choose {
         flex-direction: column;
         align-self: center;
     }
-    .maldives-img, .indonesia-img, .srilanka-img, .north-america-img, .kashmir-img, .bangladesh-img, .bandarban-img{
+    .reason-of-choose{
+        width: 90%;
+        margin: 20px auto;
+        justify-content: center;
+    }
+
+    .maldives-img,
+    .indonesia-img,
+    .srilanka-img,
+    .north-america-img,
+    .kashmir-img,
+    .bangladesh-img,
+    .bandarban-img {
         width: 100%;
         background-position: center;
         background-size: cover;
+    }
+    #choose-three{
+        width: 95%;
+        /* padding: 0 auto; */
     }
 
 }
