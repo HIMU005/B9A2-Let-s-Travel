@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 body {
     font-family: 'Mulish', sans-serif;
@@ -350,6 +351,41 @@ nav {
 
 /* why-choose-us-section-end-here */
 
+
+/* footer styles start here */
+footer{
+    margin: 100px auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#footer-icon{
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+}
+
+footer .another-description{
+    width: 60%;
+    margin: 15px auto;
+}
+
+footer hr{
+    width: 70%;
+    margin: 50px auto;
+}
+footer-foot{
+    color: #131318;
+font-family: Inter;
+font-size: 1rem;
+font-weight: 300;
+}
+
+
+
+
+
+/* footer styles end here */
 
 
 /* responsive-styles-for-mobile-device */
