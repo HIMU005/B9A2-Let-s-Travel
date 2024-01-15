@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* nav-styles-start-here */
+nav {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-title {
+    margin-left: 1rem;
+    color: #131318;
+    font-family: Mulish;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.nav-title span,
+.nav-anchors>a span {
+    color: #FF5400;
+}
+
+.nav-anchors {
+    display: flex;
+}
+
+.nav-anchors a {
+    text-decoration: none;
+    color: #424247;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    width: 45%;
+    margin-left: 30px;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+/* nav-styles-end-here */
+/* explore-styles-start-here */
+.explore {
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/Group\ 13\ \(1\)\ \(1\).png');
+    width: 85%;
+    min-height: 600px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    margin-bottom: 100px;
+    /* background-size: 115%; */
+}
+.explore-title {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 100px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+.explore-description {
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    width: 90%;
+    margin: 0 auto 50px auto;
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    width: 60%;
+    margin: 0px auto;   
+}
+
+.search,
+.primary-btn {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 15px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary-btn {
+    background: #FF5400;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* explore-styles-start-here */
+
+
+
+
+/* responsive-styles-for-mobile-device */
+@media screen and (max-width: 600px) {
+    .nav-anchors {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: contents;
+    }
+
+    .explore {
+        /* background-position-y:-100svw; */
+        background-size: cover;
+        /* max-height: 500px; */
+    }
+    .explore-title{
+        width: 85%;
+        margin: 30px auto 5px auto;
+        font-size: 22px;
+    }
+    .explore-description{
+        font-size: 14px;
+        width: 85%;
+        /* padding: 16px; */
+    }
+
+    .button-section {
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
+    .search,
+.primary-btn {
+    width: 255px;
+    height: 52px;
+}
+
+}
