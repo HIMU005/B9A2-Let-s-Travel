@@ -221,11 +221,9 @@ nav {
     display: flex;
     gap: 24px;
     justify-content: space-between;
-}
-
-.img-container {
     margin-top: 24px;
 }
+
 
 .img-container>div {
     border-radius: 16px;
@@ -237,6 +235,7 @@ nav {
 .bandarban-img {
     height: 300px;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .srilanka-img,
@@ -244,6 +243,7 @@ nav {
 .kashmir-img {
     height: 286px;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .maldives-img {
@@ -258,12 +258,12 @@ nav {
 
 .srilanka-img {
     background-image: url('../images/Rectangle\ 6.png');
-    width: 34%;
+    width: 33%;
 }
 
 .north-america-img {
     background-image: url('../images/Rectangle\ 7.png');
-    width: 43%;
+    width: 40%;
 }
 
 .kashmir-img {
@@ -273,12 +273,12 @@ nav {
 
 .bangladesh-img {
     background-image: url('../images/Rectangle\ 11.png');
-    width: 42%;
+    width: 48%;
 }
 
 .bandarban-img {
     background-image: url('../images/Rectangle\ 10.png');
-    width: 58%;
+    width: 55%;
 }
 
 
@@ -304,8 +304,10 @@ nav {
 }
 
 .choose-option {
+    width: 100%;
+    margin: 0 auto;
     padding: 32px;
-    border: 1px solid red;
+    border: 10px solid red;
 }
 
 .choose-title {
@@ -345,7 +347,6 @@ nav {
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
     width: 50%;
-    border: 1px solid red;
     margin: 24px auto;
 }
 
@@ -358,15 +359,15 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    border: 1px solid indianred;
     gap: 24px;
 }
 .newsletter-details{
 padding: 40px;
 border-radius: 16px;
 border: 1px solid #FF5400;
-width: 95%;
+width: 90%;
 }
+
 .newsletter-details .choose-title{
     margin-bottom: 16px;
 }
@@ -396,35 +397,40 @@ width: 90%;
 .discount{
     border-radius: 16px;
 background: #FF5400;
-width: 324px;
-height: 120px;
+width: 15rem;
+height: 10rem;
 transform: rotate(-19.628deg);
 color: #FFF;
 text-align: center;
 font-size: 2rem;
 font-weight: 400;
 position: relative;
-left: 45%;
-bottom: 35%;
-/* border: transparent; */
-border: 1px solid blue;
+/* right: 10px; */
+right: -45%;
+top: -200px;
+border: transparent;
 
 }
 .discount span{
     font-size: 2.5rem;
     font-weight: 800;
     width: 100%;
+    /* height: auto; */
+    
 }
 
 
-/* newslatter-styles-start-here */
+/* newslatter-styles-end-here */
 
 
 /* footer styles start here */
 footer{
     margin: 100px auto;
+    margin-bottom: 0;
     text-align: center;
-    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: rgba(19, 19, 24, 0.05);
 }
 #footer-icon{
 display: flex;
@@ -449,15 +455,69 @@ font-size: 1rem;
 font-weight: 300;
 }
 
-
-
-
-
 /* footer styles end here */
+
+/* transportation styles start here */
+.transpostation{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+    margin-bottom: 100px;
+    gap: 24px;
+    padding: 12px;
+}
+.transpostation .title{
+    margin-top: 20px;
+}
+.transportation-way{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.transportation-way img{
+    width: 100%;
+    height: 100%;
+    height: auto;
+
+}
+fieldset{
+    background-color: aquamarine;
+    width: 80%;
+    margin: 10px auto;
+}
+legend{
+    margin-bottom: 20px;
+}
+fieldset button{
+    margin: 10px auto;
+}
+.transportation-img{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.transpostation img{
+    border-radius: 16px;
+}
+.transportation-img img{
+    width: 100%;
+}
+
+/* transportation styles end here */
 
 
 /* responsive-styles-for-mobile-device */
 @media screen and (max-width: 600px) {
+    nav{
+        width: 85%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
     .nav-anchors {
         display: none;
     }
@@ -485,7 +545,7 @@ font-weight: 300;
     .popular-tour {
         flex-direction: column;
         align-items: center;
-        width: 70%;
+        width: 90%;
     }
 
     .search,
@@ -503,7 +563,7 @@ font-weight: 300;
         font-size: 14px;
     }
 
-    .img-container, .reason-of-choose {
+    .img-container, .reason-of-choose, .newsletter {
         flex-direction: column;
         align-self: center;
     }
@@ -511,6 +571,11 @@ font-weight: 300;
         width: 90%;
         margin: 20px auto;
         justify-content: center;
+    }
+    .choose-option{
+        width: 90%;
+        /* margin: 0 auto; */
+        padding-right: 10px;
     }
 
     .maldives-img,
@@ -527,6 +592,40 @@ font-weight: 300;
     #choose-three{
         width: 95%;
         /* padding: 0 auto; */
+    }
+    .discount{
+        top: -115px;
+        right: -50%;
+        width: 214.023px;
+        height: 79.268px;
+        transform: rotate(-19.628deg);
+        font-size: 1rem;
+    }
+    .newsletter{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .newsletter-details{
+        width: 100%;
+        margin: 0px auto;
+        padding: 15px;
+    }
+    .newsletter-img img{
+        width: 110%;
+    }
+    
+    .discount span{
+        font-size: 1.25rem;
+    }
+    footer{
+        margin: 0;
+    }
+    .transpostation, .transportation-way{
+        flex-direction: column-reverse;
+    }
+
+    .transpostation .title{
+        margin-top: 12px;
     }
 
 }
