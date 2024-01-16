@@ -9,7 +9,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 /* nav-styles-start-here */
 nav {
     width: 85%;
@@ -58,8 +57,8 @@ nav {
 .nav-mobile {
     display: none;
 }
-
 /* nav-styles-end-here */
+
 /* explore-styles-start-here */
 .explore {
     border-radius: 16px;
@@ -71,7 +70,6 @@ nav {
     text-align: center;
     background-size: cover;
     margin-bottom: 100px;
-    /* background-size: 115%; */
 }
 
 .explore-title {
@@ -133,7 +131,6 @@ nav {
     justify-content: space-evenly;
     align-items: center;
 }
-
 /* explore-styles-end-here */
 
 
@@ -169,6 +166,7 @@ nav {
 
 .title-description {
     width: 90%;
+    margin: 0 auto;
 }
 
 .tour-details ul>li {
@@ -184,7 +182,6 @@ nav {
     color: #5A5A5D;
     margin-bottom: 35px;
     width: 95%;
-
 }
 
 .tour-img {
@@ -195,7 +192,6 @@ nav {
     width: 100%;
     height: 100%;
 }
-
 /* popular-styles-end-here */
 
 /* destination-section-styles-start-here */
@@ -280,9 +276,6 @@ nav {
     background-image: url('../images/Rectangle\ 10.png');
     width: 55%;
 }
-
-
-
 /* destination-section-styles-end-here */
 
 /* why-choose-us-section-start-here */
@@ -313,6 +306,7 @@ nav {
     color: #131318;
     font-size: 1.5rem;
     font-weight: 800;
+    text-align: justify  ;
 }
 
 .choose-icon {
@@ -348,7 +342,6 @@ nav {
     width: 50%;
     margin: 24px auto;
 }
-
 /* why-choose-us-section-end-here */
 
 
@@ -397,8 +390,10 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
-
 
 .discount {
     border-radius: 16px;
@@ -412,21 +407,15 @@ nav {
     font-weight: 400;
     position:relative;
     border: transparent;
-    top: 180px;
-    right: -58%;
-    /* left: 100px; */
-
+    bottom: 30px;
+    right: 15px;
 }
 
 .discount span {
     font-size: 2.5rem;
     font-weight: 800;
     width: 100%;
-    /* height: auto; */
-
 }
-
-
 /* newslatter-styles-end-here */
 
 
@@ -463,7 +452,13 @@ footer hr {
     font-size: 1rem;
     font-weight: 300;
 }
-
+.big{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.another-description .color{
+    color:#FF5400;
+}
 /* footer styles end here */
 
 /* transportation styles start here */
@@ -494,21 +489,30 @@ footer hr {
     width: 100%;
     height: 100%;
     height: auto;
-
 }
 
 fieldset {
-    background-color: aquamarine;
+    background-color:#fe9883;
+    border-radius: 16px;
+    color: white;
     width: 80%;
     margin: 10px auto;
 }
 
 legend {
     margin-bottom: 20px;
+    padding-top: 15px;
 }
-
+fieldset input{
+    margin-right: 5px;
+}
 fieldset button {
     margin: 10px auto;
+}
+figcaption{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: cadetblue;
 }
 
 .transportation-img {
@@ -524,7 +528,6 @@ fieldset button {
 .transportation-img img {
     width: 100%;
 }
-
 /* transportation styles end here */
 
 
@@ -550,7 +553,6 @@ fieldset button {
     background-size: cover;
     margin-top: 24px;
     border-radius: 16px;
-
 }
 
 .discount-top {
@@ -571,6 +573,7 @@ fieldset button {
     font-size: 1.25rem;
     font-weight: 800;
     margin: 16px 0;
+    text-align: left;
 }
 
 #deal-one {
@@ -595,13 +598,12 @@ fieldset button {
     margin: 50px;
     width: 50%;
 }
-
-
 /* discount-section-styles-end */
 
 
 /* responsive-styles-for-mobile-device */
 @media screen and (max-width: 600px) {
+    
     nav {
         width: 85%;
         margin-top: auto;
@@ -686,12 +688,9 @@ fieldset button {
 
     #choose-three {
         width: 95%;
-        /* padding: 0 auto; */
     }
 
     .discount {
-        top: 185px;
-        right: -41%;
         width: 214.023px;
         height: 79px;
         transform: rotate(-19.628deg);
@@ -711,10 +710,19 @@ fieldset button {
 
     .newsletter-img{
         height: 300px;
+        width: 100%;
     }
-
+    .deals .primary-btn, .transpostation .primary-btn{
+        width: 150px;
+    }
     .discount span {
         font-size: 1.25rem;
+    }
+    .discount-space{
+        height: 600px;
+    }
+    .price{
+        margin-top: 0;
     }
 
     footer {
@@ -734,5 +742,7 @@ fieldset button {
         gap: 5px;
     }
 
-
+    .discount-top li{
+        margin-bottom: 10px;
+    }
 }
