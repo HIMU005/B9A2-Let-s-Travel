@@ -393,12 +393,12 @@ nav {
 
 .newsletter-img {
     width: 100%;
+    background-image: url('../images/Rectangle\ 8\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
 }
 
-.newsletter-img img {
-    width: 100%;
-    height: 100%;
-}
 
 .discount {
     border-radius: 16px;
@@ -410,11 +410,11 @@ nav {
     text-align: center;
     font-size: 2rem;
     font-weight: 400;
-    position: relative;
-    /* right: 10px; */
-    right: -45%;
-    top: -200px;
+    position:relative;
     border: transparent;
+    top: 180px;
+    right: -58%;
+    /* left: 100px; */
 
 }
 
@@ -457,7 +457,7 @@ footer hr {
     margin: 50px auto;
 }
 
-footer-foot {
+.footer-foot {
     color: #131318;
     font-family: Inter;
     font-size: 1rem;
@@ -517,7 +517,6 @@ fieldset button {
     gap: 15px;
     width: 100%;
 }
-
 .transpostation img {
     border-radius: 16px;
 }
@@ -541,7 +540,6 @@ fieldset button {
     margin: 0 auto;
     width: 100%;
     margin-top: 24px;
-    border: 1px solid greenyellow;
 }
 
 .discount-lists {
@@ -692,10 +690,10 @@ fieldset button {
     }
 
     .discount {
-        top: -115px;
-        right: -50%;
+        top: 185px;
+        right: -41%;
         width: 214.023px;
-        height: 79.268px;
+        height: 79px;
         transform: rotate(-19.628deg);
         font-size: 1rem;
     }
@@ -711,8 +709,8 @@ fieldset button {
         padding: 15px;
     }
 
-    .newsletter-img img {
-        width: 110%;
+    .newsletter-img{
+        height: 300px;
     }
 
     .discount span {
