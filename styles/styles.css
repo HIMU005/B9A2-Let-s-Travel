@@ -721,7 +721,7 @@ figcaption{
         font-size: 1.25rem;
     }
     .discount-space{
-        height: 600px;
+        height: 300px;
     }
     .price{
         margin-top: 0;
@@ -747,4 +747,13 @@ figcaption{
     .discount-top li{
         margin-bottom: 10px;
     }
+    .discount-lists{
+        flex-direction: column;
+    }
+    #deal-two{
+        flex-direction: column-reverse;
+    }
+    .discount-item{
+        margin: 50 auto;
+    } 
 }
